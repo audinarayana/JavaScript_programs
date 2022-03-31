@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <p id="uni"></p>
+    <p id="rem"></p>
+    <script>
+    array =[2,4,5,3,6,7,4,3,2,4,5,6,7,8]
+    var uniq = array.filter(Uniq); 
+    document.getElementById("uni").innerHTML = uniq;
+    function Uniq(value,index,array){
+     return (array.indexOf(value)===index);
+    }
+    var remove=array.filter(RemoveDuplicate);
+     document.getElementById("rem").innerHTML=remove;
+     function RemoveDuplicate(value,index,array){
+         return (array.indexOf(value)!==index)
+     }
+
+
+</script>
+</body>
+</html>

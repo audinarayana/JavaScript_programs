@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+        <p id="sort"></p>
+        <p id="stu"></p>
+        <p id="hh"></p>
+     <script>
+         var student={ name:["audi","srinu","anil","shabnu"],
+                       marks:[80,75,83,76]}
+                        
+var names=document.getElementById("sort").innerHTML=student.name;
+var sorting=names.sort();
+console.log(sorting);
+var marks=document.getElementById("stu").innerHTML=student.marks;
+
+
+   var h= marks.sort()(function(a,b){ return b-a});
+ 
+document.getElementById("hh").innerHTML=h;
+
+     </script>
+    </body>
+</html>
